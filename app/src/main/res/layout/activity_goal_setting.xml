@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:background="@drawable/back_design"
+    tools:context=".GoalSettingActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        android:text="Estabish Your Goals:"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:paddingLeft="5dp"
+        android:text="Select a daily fitness goal:"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/fitness_spinner_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginStart="5dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/spinner_arrow" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/fitness_spinner_minutes"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginStart="5dp"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/spinner_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textColor="#CCC3CC"
+        android:lines="4"
+        android:text="As a general goal, aim for at least 30 minutes of moderate physical activity every day."
+        />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="5dp"
+        android:textSize="25sp"
+        android:text="Select a daily study/research goal:"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/study_spinner_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginStart="5dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/spinner_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/study_spinner_minutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginStart="5dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/spinner_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#CCC3CC"
+        android:paddingLeft="10dp"
+        android:lines="4"
+        android:text="For students, the minimum recommended routine is to study for 4-5 hours each day. If you are not a student, it can still be beneficial to set study times and learn new things."
+        />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="5dp"
+        android:textSize="25sp"
+        android:text="Select a daily productivity goal:"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/productivity_spinner_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginStart="5dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/spinner_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/productivity_spinner_minutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginStart="5dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/spinner_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#CCC3CC"
+        android:paddingLeft="10dp"
+        android:lines="4"
+        android:text="This can be a useful for users who want to be more productive in their spare time. Tasks such as cleaning, building, are included here."
+        />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="5dp"
+        android:textSize="25sp"
+        android:text="Select a daily sleep goal:"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/rest_spinner_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginStart="5dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/spinner_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/rest_spinner_minutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginStart="5dp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@mipmap/spinner_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight=".1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#CCC3CC"
+        android:paddingLeft="10dp"
+        android:lines="4"
+        android:text="Teens aged 13-18 years should aim for 8-10 hours per 24 hours.
+        Adults aged 18-60 should aim for more 7 or more hours. Note: having a low rest stat will result in progress being made slower for all other tasks, so make sure you get enough sleep!"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl"
+        >
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish"
+            android:onClick="submitButtonTapped"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

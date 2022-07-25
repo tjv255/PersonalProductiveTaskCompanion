@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/back_design"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+<!--    Title of page-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#FFFFFF"
+        android:text="Home"
+        android:textSize="48dp" />
+
+
+    <!-- Avatar View-->
+    <RelativeLayout
+        android:id="@+id/avatar_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="352dp"
+            android:layout_height="281dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="115dp"
+            android:src="@drawable/avatar" />
+
+        <ImageView
+            android:id="@+id/avatar_hat"
+            android:layout_width="231dp"
+            android:layout_height="151dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="46dp"
+            android:alpha="0"
+            android:src="@drawable/hat" />
+
+        <ImageView
+            android:id="@+id/avatar_glasses"
+            android:layout_width="121dp"
+            android:layout_height="68dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="147dp"
+            android:alpha="0"
+            android:src="@drawable/sunglasses" />
+
+
+        <ImageView
+            android:id="@+id/avatar_shirt"
+            android:layout_width="146dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="227dp"
+            android:alpha="0"
+            android:src="@drawable/shirt" />
+
+        <ImageView
+            android:id="@+id/avatar_leg_ware"
+            android:layout_width="169dp"
+            android:layout_height="115dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="278dp"
+            android:alpha="0"
+            android:src="@drawable/pants" />
+
+        <ImageView
+            android:id="@+id/avatar_right_foot"
+            android:layout_width="103dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="354dp"
+            android:alpha="0"
+            android:src="@drawable/shoe" />
+
+        <ImageView
+            android:id="@+id/avatar_left_foot"
+            android:layout_width="111dp"
+            android:layout_height="73dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="197dp"
+            android:layout_marginTop="352dp"
+            android:alpha="0"
+            android:src="@drawable/shoe" />
+
+    </RelativeLayout>
+
+
+
+
+    <!--    Stats View-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="-15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- ___________________Empty Space___________________ -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="3" />
+
+            <TextView
+                android:id="@+id/currencyText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Currency:\n $10"
+                android:textColor="#F2b313" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="110dp"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <!-- ___________________Empty Space___________________ -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+
+            <!-- Vertically oriented items containing text with progress bars  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <!--fitness text and progress bar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--            Fitness Label and Level-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:text="Fitness"></TextView>
+
+                        <TextView
+                            android:id="@+id/fitness_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="level ?"
+                            android:textColor="#FFFFFF"
+                            android:textSize="9dp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:id="@+id/fitness_progress_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:max="100"
+                            android:progress="45" />
+
+                        <TextView
+                            android:id="@+id/fitness_progress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:text="45% of Goal"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--Informativity text and progress bar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--            Informativity Label and Level-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:text="Informativity"></TextView>
+
+                        <TextView
+                            android:id="@+id/informativity_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="level ?"
+                            android:textColor="#FFFFFF"
+                            android:textSize="9dp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:id="@+id/informativity_progress_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:max="100"
+                            android:progress="45" />
+
+                        <TextView
+                            android:id="@+id/informativity_progress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:text="45% of Goal"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--productivity text and progress bar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:orientation="horizontal">
+                    <!--            Productivity Label and Level-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#FFFFFF"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:text="Productivity"></TextView>
+
+                        <TextView
+                            android:id="@+id/productivity_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="level ?"
+                            android:textColor="#FFFFFF"
+                            android:textSize="9dp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:id="@+id/productivity_progress_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:max="100"
+                            android:progress="45" />
+
+                        <TextView
+                            android:id="@+id/productivity_progress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:text="43% of Goal"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--Rest text and progress bar -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--            Rest Label and Level-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:text="Rest"></TextView>
+
+                        <TextView
+                            android:id="@+id/rest_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="level ?"
+                            android:textColor="#FFFFFF"
+                            android:textSize="9dp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:id="@+id/rest_progress_bar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:max="100"
+                            android:progress="45" />
+
+                        <TextView
+                            android:id="@+id/rest_progress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FFFFFF"
+                            android:text="45% of Goal"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ___________________Empty Space___________________ -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/startTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="startTaskTapped"
+            android:text="Start a Task" />
+
+        <Button
+            android:id="@+id/shopButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="shopTapped"
+            android:text="Shop" />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:onClick="setGoalsTapped"
+        android:text="Set Goals"/>
+
+</RelativeLayout>
